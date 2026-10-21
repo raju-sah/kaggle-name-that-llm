@@ -1,0 +1,32 @@
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.token
+access_token
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+venv/
+.venv/
+
+# Large datasets & raw data
+data/raw/*.zip
+data/raw/*.csv
+data/raw/*.parquet
+
+# Model weights & kernel output
+artifacts/models/*
+artifacts/kernel_output/*
+!artifacts/models/.gitkeep
+!artifacts/oof/.gitkeep
+!artifacts/submissions/.gitkeep
+
+# IDEs
+.ipynb_checkpoints/
+.vscode/
+.idea/
